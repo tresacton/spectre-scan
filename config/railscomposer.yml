@@ -1,0 +1,30 @@
+# This application was generated with Rails Composer
+
+development:
+  apps4: rails-bootstrap
+  announcements: none
+  dev_webserver: unicorn
+  prod_webserver: unicorn
+  database: sqlite
+  templates: haml
+  tests: none
+  continuous_testing: 
+  frontend: bootstrap3
+  email: none
+  authentication: false
+  devise_modules: false
+  omniauth_provider: 
+  authorization: false
+  form_builder: simple_form
+  pages: about
+  layouts: simple_sidebar
+  locale: none
+  analytics: 
+  deployment: 
+  ban_spiders: 
+  github: 
+  local_env_file: false
+  better_errors: true
+  pry: false
+  rvmrc: 
+  dashboard: none

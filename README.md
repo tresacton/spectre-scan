@@ -1,33 +1,37 @@
 Spectre
 ================
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
+This application is intended to be an easy to use interface for visualising, and storing, data for RF Spectrum Scanning.
 
-Rails Composer is supported by developers who purchase our RailsApps tutorials.
+It was tested with a HackRF, however, it should work for any other devices that are supported by Soapy SDR.
 
-Problems? Issues?
 -----------
 
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
-
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
-
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
-
-Ruby on Rails
+Dependencies
 -------------
 
 This application requires:
 
 - Ruby 2.3.1
-- Rails 4.1.0
+- Rails 4.1.0 (any version up until 5.x.x should work)
+- Linux or Mac OSX (tested on Mac OSX, and Kali)
+- Soapy SDR
+- Soapy SDR HackRF Module (if using HackRF, this is a dependancy of RX Tools)
+- RX Tools(https://github.com/rxseger/rx_tools)
 
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
+Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html) here. 
 
 Getting Started
 ---------------
+WIP
+
+Installation
+---------------
+WIP
+
+Usage
+---------------
+WIP
 
 Documentation and Support
 -------------------------

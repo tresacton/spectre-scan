@@ -1,1 +1,0 @@
-json.partial! "scan_items/scan_item", scan_item: @scan_item

@@ -1,1 +1,0 @@
-json.array! @scan_items, partial: 'scan_items/scan_item', as: :scan_item

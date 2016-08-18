@@ -1,0 +1,13 @@
+= simple_form_for(@scan_item) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :spec_scan_id
+    = f.input :baseline_id
+    = f.input :upper
+    = f.input :lower
+    = f.input :time
+    = f.input :power
+
+  .form-actions
+    = f.button :submit

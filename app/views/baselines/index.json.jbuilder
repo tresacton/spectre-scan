@@ -1,0 +1,1 @@
+json.array! @baselines, partial: 'baselines/baseline', as: :baseline

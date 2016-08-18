@@ -1,0 +1,23 @@
+%h1 Listing spec_scans
+
+%table
+  %thead
+    %tr
+      %th Status
+      %th Job
+      %th
+      %th
+      %th
+
+  %tbody
+    - @spec_scans.each do |spec_scan|
+      %tr
+        %td= spec_scan.status
+        %td= spec_scan.job_id
+        %td= link_to 'Show', spec_scan
+        %td= link_to 'Edit', edit_spec_scan_path(spec_scan)
+        %td= link_to 'Destroy', spec_scan, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Spec scan', new_spec_scan_path

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  min_freq: MyString
+  max_freq: MyString
+  device: MyString
+  bin_size: MyString
+  notes: MyText
+
+two:
+  name: MyString
+  min_freq: MyString
+  max_freq: MyString
+  device: MyString
+  bin_size: MyString
+  notes: MyText

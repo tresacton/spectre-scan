@@ -1,0 +1,15 @@
+
+%p
+  %b Status:
+  = @baseline.status
+
+
+= link_to 'Back to Project', @baseline.project
+
+
+
+
+= javascript_include_tag "https://www.google.com/jsapi" 
+
+= area_chart @baseline.scan_items.group(:lower).sum(:power)
+

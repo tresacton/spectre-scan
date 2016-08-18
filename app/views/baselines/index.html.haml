@@ -1,0 +1,23 @@
+%h1 Listing baselines
+
+%table
+  %thead
+    %tr
+      %th Status
+      %th Job
+      %th
+      %th
+      %th
+
+  %tbody
+    - @baselines.each do |baseline|
+      %tr
+        %td= baseline.status
+        %td= baseline.job_id
+        %td= link_to 'Show', baseline
+        %td= link_to 'Edit', edit_baseline_path(baseline)
+        %td= link_to 'Destroy', baseline, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Baseline', new_baseline_path

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spec_scan_id: 1
+  baseline_id: 1
+  upper: MyString
+  lower: MyString
+  time: MyString
+  power: 1.5
+
+two:
+  spec_scan_id: 1
+  baseline_id: 1
+  upper: MyString
+  lower: MyString
+  time: MyString
+  power: 1.5

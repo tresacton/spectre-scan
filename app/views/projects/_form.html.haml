@@ -1,0 +1,13 @@
+= simple_form_for(@project) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :min_freq, input_html: {value: "300M"}
+    = f.input :max_freq, input_html: {value: "500M"}
+    = f.input :device, input_html: {value: "hackrf"}
+    = f.input :bin_size, input_html: {value: "1M"}
+    = f.input :notes
+
+  .form-actions
+    = f.button :submit

@@ -1,0 +1,1 @@
+json.array! @spec_scans, partial: 'spec_scans/spec_scan', as: :spec_scan

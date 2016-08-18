@@ -1,0 +1,31 @@
+%h1 Listing projects
+
+%table.table.table-bordered.table-hover
+  %thead
+    %tr
+      %th Name
+      %th Min freq
+      %th Max freq
+      %th Device
+      %th Bin size
+      %th Notes
+      %th
+      %th
+      %th
+
+  %tbody
+    - @projects.each do |project|
+      %tr
+        %td= project.name
+        %td= project.min_freq
+        %td= project.max_freq
+        %td= project.device
+        %td= project.bin_size
+        %td= project.notes
+        %td= link_to 'Show', project
+        %td= link_to 'Edit', edit_project_path(project)
+        %td= link_to 'Destroy', project, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Project', new_project_path

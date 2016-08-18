@@ -1,0 +1,48 @@
+.wrapper
+  .container-fluid
+
+    %p#notice= notice
+
+    %p
+      %b Name:
+      = @project.name
+    %p
+      %b Min freq:
+      = @project.min_freq
+    %p
+      %b Max freq:
+      = @project.max_freq
+    %p
+      %b Bin size:
+      = @project.bin_size
+    %p
+      %b Device:
+      = @project.device
+    %p
+      %b Notes:
+      = @project.notes
+
+    %hr
+
+    %h4 Baseline
+    - if @project.baseline
+      = link_to "Visualise Baseline", @project.baseline
+    - else
+      = link_to "Get a Baseline",  project_baseline_path(@project.id)
+
+    %br
+    %br
+
+
+    %h4 Scans
+    - @project.spec_scans.each do |scan|
+      = link_to "Visualise Scan - #{scan.id}", scan
+    %br
+    = link_to "Run a Scan",  project_scan_path(@project.id)
+
+
+    %hr 
+
+    = link_to 'Edit', edit_project_path(@project)
+    \|
+    = link_to 'Back', projects_path

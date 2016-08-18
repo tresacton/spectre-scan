@@ -16,6 +16,11 @@ gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 gem 'unicorn'
 gem 'unicorn-rails'
+
+gem 'sidekiq'
+
+gem "chartkick"
+
 group :development do
   gem 'better_errors'
   gem 'html2haml'

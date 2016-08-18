@@ -1,0 +1,1 @@
+json.partial! "spec_scans/spec_scan", spec_scan: @spec_scan
